@@ -15,7 +15,7 @@ jobs:
         environment: production
         steps:
             - name: Verificando repositorio
-              uses: actions/checkout@v4
+              uses: actions/checkout@v2
 
             - name: Desplegando repositorio
               uses: wlixcc/SFTP-Deploy-Action@v1.2.4
@@ -23,7 +23,6 @@ jobs:
                   username: ${{ secrets.FTP_USERNAME }}
                   server: ${{ secrets.FTP_SERVER }}
                   port: ${{ secrets.FTP_PORT }}
-                  ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
                   local_path: "./Aplicacion/*"
                   remote_path: "/web"
                   sftp_only: true
