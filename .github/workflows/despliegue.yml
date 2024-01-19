@@ -25,6 +25,6 @@ jobs:
                   port: ${{ secrets.FTP_PORT }}
                   ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
                   local_path: "./Aplicacion/*"
-                  remote_path: "/web"
+                  remote_path: "/web/proyecto"
                   sftp_only: true
                   password: ${{ secrets.FTP_PASSWORD }}
