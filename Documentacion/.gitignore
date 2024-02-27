@@ -1,3 +1,6 @@
 # Archivos de Word -> Dejar únicamente ficheros pdf
 *.doc
 *.docx
+
+# Ficheros de Illustrator
+*.ai
