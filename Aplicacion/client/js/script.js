@@ -2,8 +2,8 @@ let $bienvenida = document.getElementById("bienvenida");
 
 let ajax = new XMLHttpRequest();
 
-ajax.open("GET", "http://api.cornagopablo.com", true);
-ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+ajax.open("GET", "https://api.cornagopablo.com", true);
+// ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 ajax.send();
 
