@@ -1,0 +1,5 @@
+# Dependencias de composer
+vendor/*
+
+# Variables de entorno
+.env
